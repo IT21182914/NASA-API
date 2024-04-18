@@ -60,12 +60,16 @@ const Header = () => {
           </ul>
         </nav>
         {/* Logout button */}
-        <div className="cursor-pointer" onClick={handleLogout}>
-          <img
-            src={logoutImage}
-            alt="Logout"
-            className="h-6 w-6 text-white hover:text-gray-300"
-          />
+        <div className="self-end">
+          {" "}
+          {/* Removed md:hidden class */}
+          <div className="cursor-pointer" onClick={handleLogout}>
+            <img
+              src={logoutImage}
+              alt="Logout"
+              className="h-6 w-6 text-white hover:text-gray-300"
+            />
+          </div>
         </div>
       </div>
     </header>
