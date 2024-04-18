@@ -1,0 +1,117 @@
+.register-form-container {
+    background-color: #FFF8FA;
+   
+    padding: 20px;
+    
+}
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="password"] {
+    width: calc(90% - 10px);
+
+}
+
+body {
+    background-color: #fff1f6;
+    
+    margin: 0;
+  
+    padding: 0;
+   
+}
+.register-form {
+    width: 100%;
+    max-width: 700px;
+ 
+    margin: 0 auto;
+    background-color: #ffffff;
+    
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.register-form {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #777;
+    font-size: 12px;
+}
+
+.active label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.gap {
+    width: 20px;
+}
+
+button.submit-button {
+    width: 35%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    
+    display: block;
+   
+    background-color: #58b9ff;
+    color: white;
+}
+
+.empty-space {
+    width: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link span {
+    color: #58b9ff;
+    cursor: pointer;
+}
+
+.logo {
+    color: #58b9ff;
+    font-size: 25px !important;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -10px;
+}

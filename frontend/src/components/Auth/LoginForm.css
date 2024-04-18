@@ -1,0 +1,97 @@
+.login-form-container {
+    background-color: #FFF8FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #777;
+    font-size: 12px;
+}
+
+.active label {
+    top: -12px;
+    font-size: 12px;
+}
+
+button.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #58aeff;
+    color: white;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link span {
+    color: #58b9ff;
+    cursor: pointer;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form input[type="text"] {
+    width: calc(90% - 1px);
+  
+}
+
+input[type="submit"] {
+    width: 100%;
+   
+}
+
+.logo {
+    color: #58b9ff;
+    font-size: 25px !important;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -10px;
+}
