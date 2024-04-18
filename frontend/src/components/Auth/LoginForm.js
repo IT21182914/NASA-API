@@ -55,7 +55,7 @@ const LoginForm = () => {
   const sendRequest = async (formData) => {
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/auth/login",
+        "https://nasa-api-5vca.onrender.com/api/auth/login",
         formData
       );
       const data = await res.data;

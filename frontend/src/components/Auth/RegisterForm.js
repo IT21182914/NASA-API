@@ -87,7 +87,7 @@ const RegisterForm = () => {
       }
 
       const response = await axios.post(
-        "http://localhost:8080/api/auth/register",
+        "https://nasa-api-5vca.onrender.com/api/auth/register",
         formData
       );
       console.log(response.data);
