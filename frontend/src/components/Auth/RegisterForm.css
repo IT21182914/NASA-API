@@ -8,7 +8,7 @@
 .register-form input[type="email"],
 .register-form input[type="tel"],
 .register-form input[type="password"] {
-    width: calc(90% - 10px);
+    width: calc(100% - 5px);
 
 }
 
