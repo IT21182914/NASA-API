@@ -72,11 +72,11 @@ label {
 }
 
 .gap {
-    width: 20px;
+    width: 10px;
 }
 
 button.submit-button {
-    width: 35%;
+    width: 45%;
     padding: 10px;
     border: none;
     border-radius: 5px;
