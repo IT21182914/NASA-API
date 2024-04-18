@@ -71,7 +71,7 @@ const ImageSearch = () => {
         />
         <button
           onClick={handleSearch}
-          className="absolute top-[-1px] right-3 mt-3 mr-4 px-2 py-1 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 transition-all duration-300"
+          className="absolute top-1 right-4 mt-3 mr-4 px-3 py-1 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 transition-all duration-300"
         >
           Search
         </button>
