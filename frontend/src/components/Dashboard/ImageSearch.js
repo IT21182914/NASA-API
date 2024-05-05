@@ -7,6 +7,7 @@ const ImageSearch = () => {
   const [query, setQuery] = useState("Astro Camp");
   const [searchResults, setSearchResults] = useState([]);
   const [suggestions, setSuggestions] = useState([]);
+  const [isSearchActive, setIsSearchActive] = useState(false);
 
   const handleSearch = async () => {
     try {
@@ -72,8 +73,12 @@ const ImageSearch = () => {
           <input
             type="text"
             value={query}
+            onFocus={() => setIsSearchActive(true)}
+            onBlur={() => setIsSearchActive(false)}
             onChange={handleInputChange}
-            className="w-full rounded-full py-3 px-4 text-lg outline-none shadow-md focus:shadow-lg transition-all duration-300 bg-white text-gray-800"
+            className={`w-full rounded-full py-3 px-4 text-lg outline-none shadow-md focus:shadow-lg transition-all duration-300 bg-white text-gray-800 ${
+              isSearchActive ? "text-white" : ""
+            }`}
             placeholder="Search images..."
           />
           <button
@@ -88,7 +93,9 @@ const ImageSearch = () => {
             <div
               key={index}
               onClick={() => handleSuggestionClick(suggestion)}
-              className="cursor-pointer hover:bg-gray-200 rounded-lg px-4 py-2 my-1 text-gray-800 transition-all duration-300"
+              className={`cursor-pointer hover:bg-gray-200 rounded-lg px-4 py-2 my-1 ${
+                isSearchActive ? "text-white" : "text-gray-800"
+              } transition-all duration-300`}
             >
               {suggestion}
             </div>
