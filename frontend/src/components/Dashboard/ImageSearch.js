@@ -88,7 +88,7 @@ const ImageSearch = () => {
             <div
               key={index}
               onClick={() => handleSuggestionClick(suggestion)}
-              className="cursor-pointer hover:bg-gray-200 rounded-lg px-4 py-2 my-1 text-gray-800"
+              className="cursor-pointer hover:bg-gray-200 rounded-lg px-4 py-2 my-1 text-gray-800 transition-all duration-300"
             >
               {suggestion}
             </div>
