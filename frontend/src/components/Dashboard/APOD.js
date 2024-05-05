@@ -22,10 +22,10 @@ const APOD = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h2 className="text-center text-3xl font-semibold mb-4 text-white">
+      <h2 className="text-center text-4xl font-semibold mb-4 text-white font-mono">
         <TypeAnimation
           wrapper="span"
-          sequence={["Astronomy Picture of the Day", 2000]}
+          sequence={["Astronomy Picture of the Day!", 2000]}
           repeat="infinity"
           speed={20}
         />
@@ -38,7 +38,7 @@ const APOD = () => {
           transition={{ duration: 0.5 }}
           className="rounded-lg overflow-hidden shadow-md"
         >
-          <h3 className="text-xl font-semibold mb-2 text-white">
+          <h3 className="text-xl font-semibold mb-2 text-white font-serif">
             <TypeAnimation
               wrapper="span"
               sequence={[apod.title, 2000]}
