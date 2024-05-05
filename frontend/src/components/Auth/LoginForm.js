@@ -85,7 +85,14 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="login-form-container">
+    <div
+      className="login-form-container"
+      style={{
+        backgroundImage:
+          'url("https://cdn.pixabay.com/photo/2016/05/10/09/01/space-1383282_1280.jpg")',
+        backgroundSize: "cover",
+      }}
+    >
       <div className="login-form">
         <div className="logo">NASA</div>
         <h2>Login</h2>

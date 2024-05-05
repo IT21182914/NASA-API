@@ -120,9 +120,14 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="register-form-container">
-      <br /> <br />
-      <br /> <br />
+    <div
+      className="register-form-container"
+      style={{
+        backgroundImage:
+          'url("https://cdn.pixabay.com/photo/2016/05/10/09/01/space-1383282_1280.jpg")',
+        backgroundSize: "cover",
+      }}
+    >
       <div className="register-form">
         <div className="logo">Welcome to NASA</div>
         <br />
@@ -262,8 +267,6 @@ const RegisterForm = () => {
           </Link>
         </p>
       </div>
-      <br /> <br />
-      <br /> <br />
     </div>
   );
 };

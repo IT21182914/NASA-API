@@ -1,8 +1,12 @@
 .register-form-container {
-    background-color: #FFF8FA;
-   
-    padding: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Set the container min-height to full viewport height */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .register-form input[type="text"],
 .register-form input[type="email"],
@@ -13,25 +17,23 @@
 }
 
 body {
-    background-color: #fff1f6;
-    
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/10/09/01/space-1383282_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
-  
     padding: 0;
-   
 }
 .register-form {
     width: 100%;
-    max-width: 700px;
- 
-    margin: 0 auto;
-    background-color: #ffffff;
-    
+    max-width: 400px;
+    /* Adjust width as needed */
+    margin: 20px;
+    /* Add margin to create space around the form */
     padding: 20px;
+    background-color: #ffffff;
     border-radius: 10px;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .register-form {
@@ -40,7 +42,8 @@ body {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Allow rows to wrap */
     margin-bottom: 20px;
 }
 
@@ -72,7 +75,13 @@ label {
 }
 
 .gap {
-    width: 10px;
+    flex: 0 0 10px;
+    /* Specify width for gap */
+}
+
+.empty-space {
+    flex: 0 0 20px;
+    /* Specify width for empty space */
 }
 
 button.submit-button {
@@ -114,4 +123,5 @@ button.submit-button {
     font-weight: bold;
     text-align: center;
     margin-left: -10px;
+    margin-bottom: 20px;
 }
