@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation"; // Importing TypeAnimation component
 
 const APOD = () => {
   const [apod, setApod] = useState(null);
@@ -21,8 +22,13 @@ const APOD = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h2 className="text-center text-3xl font-semibold mb-4 text-blue-900">
-        Astronomy Picture of the Day
+      <h2 className="text-center text-3xl font-semibold mb-4 text-white">
+        <TypeAnimation
+          wrapper="span"
+          sequence={["Astronomy Picture of the Day", 2000]}
+          repeat="infinity"
+          speed={20}
+        />
       </h2>
 
       {apod && (
@@ -32,15 +38,29 @@ const APOD = () => {
           transition={{ duration: 0.5 }}
           className="rounded-lg overflow-hidden shadow-md"
         >
-          <h3 className="text-xl font-semibold mb-2">{apod.title}</h3>
-          <img
-            className="w-full rounded-lg shadow-md mb-4"
-            src={apod.url}
-            alt={apod.title}
-            style={{ maxHeight: "600px", width: "100%" }}
-          />
-          <p className="text-gray-700 text-lg leading-relaxed">
-            {apod.explanation}
+          <h3 className="text-xl font-semibold mb-2 text-white">
+            <TypeAnimation
+              wrapper="span"
+              sequence={[apod.title, 2000]}
+              repeat="infinity"
+              speed={10}
+            />
+          </h3>
+          <div className="border-4 border-blue-900 rounded-lg overflow-hidden">
+            <img
+              className="w-full rounded-lg shadow-md mb-4"
+              src={apod.url}
+              alt={apod.title}
+              style={{ maxHeight: "600px", width: "100%" }}
+            />
+          </div>
+          <p className="text-white text-lg leading-relaxed">
+            <TypeAnimation
+              wrapper="span"
+              sequence={[apod.explanation, 2000]}
+              repeat="infinity"
+              speed={20}
+            />
           </p>
         </motion.div>
       )}
