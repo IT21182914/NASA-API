@@ -77,7 +77,7 @@ const ImageSearch = () => {
             onBlur={() => setIsSearchActive(false)}
             onChange={handleInputChange}
             className={`w-full rounded-full py-3 px-4 text-lg outline-none shadow-md focus:shadow-lg transition-all duration-300 bg-white text-gray-800 ${
-              isSearchActive ? "text-white" : ""
+              isSearchActive ? "text-black" : ""
             }`}
             placeholder="Search images..."
           />
